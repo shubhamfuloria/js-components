@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POPUP Window</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="popup">
+        <form action="POST" class="form">
+          <h2 id="form-heading">Enter your details</h2>
+          <label for="name-input">
+            <input
+              id="name-input"
+              type="text"
+              class="input-box input"
+              placeholder="Username"
+            />
+          </label>
+          <label for="password-input">
+            <input
+              id="password-input"
+              type="password"
+              class="input-box input"
+              placeholder="Password"
+            />
+          </label>
+          <label>
+            <input id="submit" type="submit" value="Login" />
+          </label>
+        </form>
+      </div>
+      <button type="submit" class="open-popup">Login</button>
+    </div>
+    <script src = "app.js"></script>
+  </body>
+</html>
