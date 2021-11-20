@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: orange;
+}
+.nav-list {
+  flex-basis: 40%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "M Plus 1";
+  font-size: 1.1rem;
+}
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  cursor: pointer;
+  padding-bottom: 0.4rem;
+  display: inline-block;
+}
+.nav-link:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  background: black;
+  bottom: 0;
+  left: 0;
+  transition: width 200ms ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-list .nav-item:hover .nav-link:after {
+  width: 100%;
+}
+
+.dropdown:after {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: rotate(-45deg);
+  position: absolute;
+  right: -20px;
+  top: 8px;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.projects {
+  list-style: none;
+  position: absolute;
+  background-color: orange;
+  height: 140px;
+  width: 100px;
+  text-align: center;
+}
+
+.dropdown:hover:after {
+  transform: rotate(135deg);
+}
+
+@media (max-width: 850px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .nav-list {
+    flex-basis: 100%;
+  }
+}

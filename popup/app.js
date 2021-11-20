@@ -9,8 +9,3 @@ loginBtnEl.addEventListener('click', function () {
 formEl.addEventListener('transitionend', function () {
     bodyEl.classList.toggle('blur');
 })
-
-bodyEl.addEventListener('click', function(){
-    // formEl.classList.toggle('form-open');
-})
-
